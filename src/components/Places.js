@@ -1,11 +1,10 @@
 import React from 'react';
 import Place from '../view/Place';
-import { Outlet } from 'react-router-dom';
+
 
 function Places(props) {
   return (
     <div>
-        <Outlet />
          {props.places.map((place, index) => (
         <Place
           key={index}

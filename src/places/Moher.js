@@ -57,9 +57,7 @@ function Moher() {
         Ireland’s largest mainland seabird colony, which between April and July
         includes Puffins!.
       </p>
-      <h2>Place Details</h2>
-      <p>Name: {placeDetails.name}</p>
-      <p>Address: {placeDetails.formatted_address}</p>
+      
     </div>
   );
 }

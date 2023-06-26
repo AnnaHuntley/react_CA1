@@ -79,20 +79,16 @@
           <Navbar />
       
           <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="places" element={<Places places={places} />} />
-
-
-          {/*<Route path='places' element={<Places places={places}/>}>
-              <Route path="powerscourt" element={<Powerscourt />} />
-             <Route path="guinness-storehouse" element={<Guinness />} />
-             <Route path="skellig-michael" element={<Skellig />} />
-              <Route path="blarney-castle" element={<Blarney />} />
-              <Route path="newgrange" element={<Newgrange />} />
-              <Route path="cliffs-of-moher" element={<Moher />} />
-          </Route>*/}
-          <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="places" element={<Places places={places} />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/places/powerscourt" element={<Powerscourt />} />
+            <Route path="/places/guinness-storehouse" element={<Guinness />} />
+            <Route path="/places/skellig-michael" element={<Skellig />} />
+            <Route path="/places/blarney-castle" element={<Blarney />} />
+            <Route path="/places/newgrange" element={<Newgrange />} />
+            <Route path="/places/cliffs-of-moher" element={<Moher />} />
           </Routes>
           
         </div>
