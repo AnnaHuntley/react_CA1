@@ -6,7 +6,7 @@ function Place(props) {
     <div>
       <Link to={props.link}>
         <strong>{props.name}</strong>
-  </Link>
+      </Link>
       <p>{props.description}</p>
       <p>{props.info}</p>
       <img src={props.image} alt={props.name} />
@@ -15,3 +15,5 @@ function Place(props) {
 }
 
 export default Place;
+
+

@@ -3,17 +3,17 @@ import axios from 'axios';
 
 function Moher() {
   const [placeDetails, setPlaceDetails] = useState(null);
+  const [showDetails, setShowDetails] = useState(false); // Define showDetails state variable
 
   useEffect(() => {
-    // Fetch place details from the Google Places API
     const fetchPlaceDetails = async () => {
       try {
         const response = await axios.get(
-          'https://maps.googleapis.com/maps/api/place/details/json',
+          '/api/maps/api/place/details/json',
           {
             params: {
-              place_id: 'ChIJ05IRjKHxEQ0RJLV_5NLdK2w',
-              fields: 'name,formatted_address', 
+              place_id: 'ChIJ84G4C68BW0gR5sC4SJBGOig',
+              fields: 'name,formatted_address',
               key: 'AIzaSyC9DZIJ-77Ydluh2ZGh7xWjLVrt2lt7tlk',
             },
           }
@@ -27,13 +27,25 @@ function Moher() {
     fetchPlaceDetails();
   }, []);
 
-  if (!placeDetails) {
-    return <div>Loading place details...</div>;
-  }
+  const toggleDetails = () => {
+    setShowDetails(!showDetails);
+  };
 
-  // Render the place details on the component
+
   return (
     <div>
+      {placeDetails && (
+        <div>
+          <button onClick={toggleDetails}>Address</button>
+          {showDetails && (
+            <div>
+              <h2>{placeDetails.name}</h2>
+              <p>{placeDetails.formatted_address}</p>
+            </div>
+          )}
+        </div>
+      )}
+
       <h1>Cliffs of Moher</h1>
       <p>
         Standing at 214 meters over the depths of the Atlantic Ocean, and
@@ -48,7 +60,6 @@ function Moher() {
       <h2>Place Details</h2>
       <p>Name: {placeDetails.name}</p>
       <p>Address: {placeDetails.formatted_address}</p>
-     
     </div>
   );
 }

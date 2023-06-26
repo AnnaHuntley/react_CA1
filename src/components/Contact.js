@@ -1,11 +1,12 @@
+
 import React from 'react';
+
 
 function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      {/* Add your content for the Contact page */}
-      <form>
+    <div className="contact-container">
+      <h1 className="contact-title">Contact Page</h1>
+      <form className="contact-form">
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" />
         
@@ -22,4 +23,5 @@ function Contact() {
 }
 
 export default Contact;
+
 
