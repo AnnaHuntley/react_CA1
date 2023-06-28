@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react_CA1.github.io/static/css/main.cc88a016.css",
+    "main.js": "/react_CA1.github.io/static/js/main.05f995ea.js",
+    "static/js/787.d3970f6d.chunk.js": "/react_CA1.github.io/static/js/787.d3970f6d.chunk.js",
+    "static/media/guinness_storehouse.jpg": "/react_CA1.github.io/static/media/guinness_storehouse.014fb78e459c198c8b18.jpg",
+    "static/media/powerscourt_estate.jpg": "/react_CA1.github.io/static/media/powerscourt_estate.04d94ce2d1e17c2959b0.jpg",
+    "static/media/cliffs_of_moher.jpg": "/react_CA1.github.io/static/media/cliffs_of_moher.3814de029db014736de2.jpg",
+    "static/media/blarney_castle.jpg": "/react_CA1.github.io/static/media/blarney_castle.d3147b79f52f2a2ba350.jpg",
+    "static/media/newgrange.jpg": "/react_CA1.github.io/static/media/newgrange.585d30bfb7c773306e09.jpg",
+    "static/media/skellig_michael.jpg": "/react_CA1.github.io/static/media/skellig_michael.aea0b814064fd59252dd.jpg",
+    "index.html": "/react_CA1.github.io/index.html",
+    "main.cc88a016.css.map": "/react_CA1.github.io/static/css/main.cc88a016.css.map",
+    "main.05f995ea.js.map": "/react_CA1.github.io/static/js/main.05f995ea.js.map",
+    "787.d3970f6d.chunk.js.map": "/react_CA1.github.io/static/js/787.d3970f6d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc88a016.css",
+    "static/js/main.05f995ea.js"
+  ]
+}
