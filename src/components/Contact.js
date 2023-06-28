@@ -5,7 +5,7 @@ import React from 'react';
 function Contact() {
   return (
     <div className="contact-container">
-      <h1 className="contact-title">Contact Page</h1>
+      <h2 className="contact-title">Contact Page</h2>
       <form className="contact-form">
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" />

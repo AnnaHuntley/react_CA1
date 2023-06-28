@@ -1,7 +1,104 @@
 
-.navbar {
-  background-color: #333;
+.place-containers {
+  width: 90%; 
+  margin: 8px;
+  padding: 16px;  
+  border: 2px solid #bdcebe;
+  margin-left: 50px;
+ }
+#m, #b, #g, #n, #p, #s{
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  margin-top: 0;
+ 
+}
+#m{
+  background-image: url('./images/cliffs_of_moher.jpg');
+}
+#b{
+  background-image: url('./images/blarney_castle.jpg');
+}
+#g{
+  background-image: url('./images/guinness_storehouse.jpg');
+}
+#n{
+  background-image: url('./images/newgrange.jpg');
+}
+#p{
+  background-image: url('./images/powerscourt_estate.jpg');
+}
+#s{
+  background-image: url('./images/skellig_michael.jpg');
+}
+.place-link {
+  color: #666;
+  text-decoration: underline;
+}
+
+.place-name{
+  font-weight: bold;
+  font: Courier;
+  font-size: 20px;
+}
+h1{
+  font-weight: bold;
+  font: Courier;
+  font-size: 20px;
   padding: 10px;
+  padding-left: 40%;
+  margin-top: 0;
+  color: #fff;
+  background-color: #666;
+ 
+}
+.address{
+  margin-left: 40%;
+}
+.address div {
+  color: white;
+}
+.place-name:hover {
+  background-color: #bdcebe;
+}
+
+.place-description {  
+  color: #666;
+}
+
+.place-info  {
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.place-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-top: 16px;
+  padding-left: 60px;
+}
+.info{
+  color: #fff;
+  background-color: #666;
+}
+
+.home-about, .info{
+  border-radius: 50px;
+  border: 2px solid #bdcebe;
+  width: 80%;
+  padding: 20px;
+  margin: 50px;
+  font: italic;
+  font-size: 16px;
+}
+.navbar {
+  background-color: #bdcebe;
+  padding: 10px;
+  font: Courier;
+  font-size: 20px;
 }
 
 .navbar ul {
@@ -11,7 +108,7 @@
 }
 
 .navbar li {
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
 .navbar li a {
@@ -31,7 +128,7 @@
 
 .contact-title {
   font-size: 24px;
-  color: #333;
+  color: #666;
 }
 
 .contact-form {
@@ -56,16 +153,21 @@
   border-radius: 4px;
 }
 
-.contact-form button {
+button {
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: #bdcebe;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.contact-form button:hover {
-  background-color: #0056b3;
+ button:hover {
+  background-color: #ccc;
 }
 
+@media screen and (max-width: 900px) {
+  .place-image{
+    padding-left: 5px;
+  }
+}

@@ -12,7 +12,7 @@ function Places(props) {
           description={place.description}
           link={place.link}
           image={place.image}
-          info={place.info}
+          
         />
       ))}
     </div>

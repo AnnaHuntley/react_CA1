@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 
 function Place(props) {
   return (
-    <div>
-      <Link to={props.link}>
-        <strong>{props.name}</strong>
-      </Link>
-      <p>{props.description}</p>
-      <p>{props.info}</p>
-      <img src={props.image} alt={props.name} />
-    </div>
+    <div className="place-containers">
+    <Link to={props.link} className="place-link">
+      <strong className="place-name">{props.name}</strong>
+    </Link>
+    <p className="place-description">{props.description}</p>
+    <img className="place-image" src={props.image} alt={props.name} />
+  </div>
   );
 }
 
