@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Place(props) {
   return (
-    <div className="place-containers">
+    <div>
     <Link to={props.link} className="place-link">
       <strong className="place-name">{props.name}</strong>
     </Link>
